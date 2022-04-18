@@ -1,0 +1,10 @@
+-membuat venv
+python -m venv <nama venv>
+
+-mengaktifkan
+<nama_venv>\Scripts\activate
+
+-menonaktifkan
+deactivate
+
+pip list
