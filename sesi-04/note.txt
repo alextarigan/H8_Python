@@ -1,0 +1,16 @@
+try:
+   f = open("Hack8_Sample_Text_zzz.txt", encoding = 'utf-8')
+   # perform file operations
+except FileNotFoundError:
+    print('File tidak ada')
+finally:
+#    f.close()
+    print('Already tried')
+
+jika file tidak ada, maka menjalankan exceptions
+
+
+The AssertionsEerror Exception
+import sys
+assert ('linux' in sys.platform), "This code runs on Linux only."
+assert ('windows' in sys.platform), "This code runs on Windows only."

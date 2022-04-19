@@ -1,0 +1,68 @@
+Function < module < packages
+-> di packages bisa ada module, di module bisa ada function
+
+
+keuntungan modularizing:
+-simple
+-maintainability
+-reusability
+-scoping
+
+untuk append module dari folder lain -> bersifat temporary
+-imprt sys
+-sys.path.append(r'E:\OCBC\Python\sesi-03\sesi3_new')
+
+import module
+-import <nama_modul>
+-from person import name atau from person import name as person_name
+-from person import * (untuk semua) atau import person
+
+
+dir() -> nampilin dir 
+['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__']
+
+misal pada intepreter nambahin:
+>>> mylist = [1,2,3,4,5]
+dir()
+['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'mylist']
+
+agar bisa mereload module
+-import importlib
+-importlib.reload(nama_modul)
+======================================================
+module -> untuk global variable name
+packages -> untuk module
+
+membuat packages -> untuk grouping and organizing
+-buat folder
+-folder->pkg
+-buat file (mis:def.py)
+
+import packages (di intepreter)
+-import pkg.mod1, pkg.mod2
+atau
+-from pkg.mod1 import kitchen_sets as ks
+-pkg.mod1.kitchen_sets
+
+==================================================
+
+Pip -> install/uninstall package
+
+-pip list
+-pip help
+-pip install requests
+-pip freeze > requirements.txt
+
+buat using_requests.py
+# In using-requests.py
+
+import requests
+
+url = 'https://www.google.com'
+response = requests.get(url)
+print(f'Response returned: {response.status_code}, {response.reason}')
+print(response.text)
+
+Membuat file requirements -> ketika mau pindah ke virtual envi lain. untuk jaga jaga agar versi tetap sama
+-pip freeze > requirements.txt
+
