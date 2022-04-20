@@ -1,0 +1,12 @@
+identifikasi objek:
+-attribute -> daftar attribut/properties yang dimiliki oleh obj tsb.(name,age,adress)
+-Method -> behavior yang bisa dilakukan oleh obj tsb (walking,talking,running) 
+
+tahapan :
+-buat class (isinya daftar attribute yang telah kita rumuskan,misal name,age,role), dengan cara mendefinisikan "blok class" diawali dengan reserved words "class"
+-setelah itu baru bisa instantiating object( creat instance / instantiating new instance of class X)
+
+
+class mengandung :
+-attribute
+-blue print -> panduan kalau mau bikin / nyimpan object employee baru, itu objeknya harus punya kolom/atribute apa saja.
